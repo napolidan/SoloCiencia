@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="../css/login.css">
+	<meta charset="ISO-8859-1">
+	<title>Login</title>
+</head>
+<body>
+	<header>
+		
+	</header>
+	
+	<section>
+		<img src="../css/logo_negro.png">
+		<h2>Inicie sesion en su cuenta</h2>
+		<form action="../jsp/validalogin.jsp" method="post">
+			
+			<div class="formulario">
+				<label for="nombre">Usuario</label>
+				<input type="text" id="nombre" name="usuario">
+				<br><br>
+			</div>
+			
+			<div class="formulario">
+				<label for="contrasena">Contrasena</label>
+				<input type="password" id="contra" name="contrasenaID">
+				<br><br>
+			</div>
+			
+			<input type="submit" id="submit" value="Iniciar sesion">
+		</form>
+		<a href="registro.html">Registrarse</a>
+	</section>
+
+	<footer>
+		<div>Todos los derechos reservados</div>
+	</footer>
+
+</body>
+</html>

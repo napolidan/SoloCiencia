@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="../css/curso.css">
+		<meta charset="ISO-8859-1">
+		<title>Registro</title>
+	</head>
+<body>
+    
+	<header>
+		
+	</header>
+
+    <img src="../css/ciencia.jpeg" class="background">
+	
+	<section>
+		<img src="../css/logo_blanco.png">
+		<hr>
+		<h2>Curso de Ciencias Naturales</h2>
+		<h4>* indica campos obligatorios</h4>
+		<form action="../jsp/registro.jsp" method="post">
+		
+			<div class="formulario">
+				<label for="nombre">Usuario *</label>
+				<input type="text" id="nombre" name="usuario">
+				<br><br>
+			</div>
+
+			<div class="formulario">
+				<label for="cedula">Cedula *</label>
+				<input type="text" id="cedula" name="cedulaID">
+				<br><br>
+			</div>
+
+			<div class="formulario_radio"><br>
+				<label>Fecha de inicio de curso</label><br><br><br>
+				<input type="radio" id="fecha1" name="date1" value="20 de julio">
+				<label for="fecha1">20 de julio</label><br><br>
+				
+				<input type="radio" id="fecha2" name="date2" value="24 de octubre">
+				<label for="fecha2">24 de octubre</label><br><br>
+				
+				<input type="radio" id="fecha3" name="date3" value="14 de noviembre">
+				<label for="fecha3">14 de noviembre</label><br><br>
+
+				<br><br>
+			</div>			
+			
+			<p>Al hacer clic en Registrarse, confirmo que he leido y acepto: Declaracion de privacidad de SoloCiencia y terminos condiciones del sitio web de SoloCiencia.</p>
+
+
+			<input type="submit" value="Registrarse" id="submit">
+			
+		</form>
+
+	</section>
+
+	<footer>
+		<div>Todos los derechos reservados</div>
+	</footer>
+
+
+</body>
+</html>

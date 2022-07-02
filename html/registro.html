@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="../css/registrostyle.css">
+		<meta charset="ISO-8859-1">
+		<title>Registro</title>
+	</head>
+<body>
+	<header>
+		
+	</header>
+	
+	<section>
+		<img src="../css/logo_negro.png">
+		<hr>
+		<h2>Crear cuenta</h2>
+		<h4>* indica campos obligatorios</h4>
+		<form action="../jsp/registro.jsp" method="post">
+		
+			<div class="formulario">
+				<label for="nombre">Usuario *</label>
+				<input type="text" id="nombre" name="usuario">
+				<br><br>
+			</div>
+
+			<div class="formulario">
+				<label for="apellido">Apellido *</label>
+				<input type="text" id="apellido" name="apellido">
+				<br><br>
+			</div>
+
+			<div class="formulario">
+				<label for="edad">Edad *</label>
+				<input type="text" id="edad" name="edad">
+				<br><br>
+			</div>
+
+			<div class="formulario">
+				<label for="contrasena">Contrasena *</label>
+				<input type="password" id="contrasena" name="contrasenaID">
+				<br><br>
+			</div>
+			
+			
+			<p>Al hacer clic en Registrarse, confirmo que he leido y acepto: Declaracion de privacidad de SoloCiencia y terminos condiciones del sitio web de SoloCiencia.</p>
+
+
+			<input type="submit" value="Registrarse" id="submit">
+			
+		</form>
+
+		<a href="login.html">Volver a inicio de sesion</a>
+
+	</section>
+
+	<footer>
+		<div>Todos los derechos reservados</div>
+	</footer>
+
+
+</body>
+</html>

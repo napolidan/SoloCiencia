@@ -1,0 +1,103 @@
+/* COLOR DE FONDO */
+:root{
+    --main: white;
+}
+
+header{
+    text-align: center;
+}
+
+body{
+    background: rgb(193,255,130);
+background: linear-gradient(180deg, rgba(193,255,130,1) 54%, rgba(255,255,255,1) 100%);
+}
+
+/* CONTENIDO DE LA PÁGINA */
+section{
+
+    height: 100vh;
+    background-color: var(--main);
+    margin: auto;
+    box-shadow: 0px 0px 11px 4px rgba(0,0,0,0.78); 
+}
+
+/* LÍNEAS DE LA TABLA PERIÓDICA */
+.tablaP{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ENLACES EN TABLA PERIÓDICA */
+.tablaP > *{
+    width: 100%;
+}
+a{
+    font-size: 1.5vw;
+    color:black;
+    text-align: center;
+    display: inline-block;
+    height: 100%;
+    padding: 1rem;
+    text-decoration: none;
+    margin: 1px;
+}
+
+/* HOVER DE ENLACES */
+a:hover {
+    background-color: #031FA2 !important;
+    color: white !important;
+    text-decoration: none !important;
+}
+
+/* VISITED DE ENLACES */
+a:visited{
+    text-decoration: none;
+    color: black;
+}
+
+/* FILTROS DE COLOR */
+div:nth-child(1) a:nth-child(1) {
+    background-color: #C8AAD2;
+}
+div:nth-child(n+2) a:nth-child(1){
+    background-color: #F7CBAC;
+}
+div:nth-child(n+2) a:nth-child(2){
+    background-color: #FFE69A;
+}
+div:nth-child(n+4) a:nth-child(n+3){
+    background-color: #F3E600;
+}
+div:nth-child(n+2) a:nth-child(n+13){
+    background-color: #C8AAD2;
+}
+div:nth-child(2) a:nth-child(13), div:nth-child(n+3) a:nth-child(14), div:nth-child(n+4) a:nth-child(15), div:nth-child(n+5) a:nth-child(16){
+    background-color: #85BD47;
+}
+div:nth-child(n+3) a:nth-child(13), div:nth-child(n+5) a:nth-child(14), div:nth-child(n+6) a:nth-child(15), div:nth-child(n+7) a:nth-child(16){
+    background-color: #FFE69A;
+}
+div:nth-child(n) a:nth-child(17){
+    background-color: #BD78B1;
+}
+div:nth-child(n) a:last-child{
+    background-color: #3DC0F0;
+}
+div:nth-child(n+10) a:nth-child(n+3){
+    background-color: #E3EFD9;
+}
+
+/* CELDAS VACÍAS */
+.null{
+    background-color: transparent !important;
+    border-color: transparent;
+}
+
+/* HOVER DE CELDAS VACÍAS */
+.null:hover{
+    background-color: transparent !important;
+}
+
+footer{
+}
