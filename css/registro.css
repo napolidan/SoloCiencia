@@ -1,9 +1,12 @@
 @font-face {
     font-family: Geom;
-    src:local("C:\Users\Daniel\eclipse-workspace\Tarea4\src\main\webapp\css\geom.ttf");
-
+    src:url("../fonts/geom.ttf");
 }
 
+@font-face {
+    font-family: soft;
+    src:url("../fonts/soft.ttf");
+}
 
 body{
     font-family: Geom;

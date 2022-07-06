@@ -1,61 +1,82 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" href="../css/registrostyle.css">
+		<link rel="stylesheet" href="../css/curso.css">
+		<link rel="icon" type="image/png" href="../images/favicon_white.png"/>
 		<meta charset="ISO-8859-1">
-		<title>Registro</title>
+		<title>Quimica y Biologia</title>
 	</head>
 <body>
+    
 	<header>
 		
 	</header>
+
+    <img src="../images/quimica.jpg" class="background">
 	
 	<section>
-		<img src="../css/logo_negro.png">
-		<hr>
-		<h2>Crear cuenta</h2>
-		<h4>* indica campos obligatorios</h4>
-		<form action="../jsp/registro.jsp" method="post">
 		
-			<div class="formulario">
-				<label for="nombre">Usuario *</label>
-				<input type="text" id="nombre" name="usuario">
-				<br><br>
+		<div>
+			<img src="../images/catch_phrase_border.png" id="phrase">
+		</div>
+
+		<div>
+			<div>
+				<img src="../images/logo_negro_full.png" id="titleImage">
+				<hr>
+				<h1>Curso de Quimica y Biologíi</h1>
+				<h4>* Indica campos obligatorios</h4>
+				<form action="../jsp/registro_curso2.jsp" method="post">
+				
+					<div class="formulario">
+						<label for="nombre">Usuario <span>*</span></label>
+						<input type="text" id="nombre" name="nombre">
+						<br><br>
+					</div>
+		
+					<div class="formulario">
+						<label for="cedula">Cedula <span>*</span></label>
+						<input type="text" id="cedula" name="cedula">
+						<br><br>
+					</div>
+		
+					<div class="formulario_radio"><br>
+						<fieldset>
+							<legend>Fecha de inicio de curso <span>*</span></legend>
+							<br>
+							<input type="radio" id="fecha1" name="fecha" value="20 de julio">
+							<label for="fecha1">20 de julio</label><br><br>
+							
+							<input type="radio" id="fecha2" name="fecha" value="24 de octubre">
+							<label for="fecha2">24 de octubre</label><br><br>
+							
+							<input type="radio" id="fecha3" name="fecha" value="14 de noviembre">
+							<label for="fecha3">14 de noviembre</label><br><br>
+						</fieldset>
+						<br><br>
+					</div>			
+					
+					<p>Al hacer clic en Registrarse, confirmo que he leído y acepto: Declaración de privacidad de SoloCiencia y términos condiciones del sitio web de SoloCiencia.</p>
+		
+		
+					<input type="submit" value="Registrarse" id="submit">
+
+					<br><br><br>
+
+					<a href="home.html" id="inicio">Regresar al inicio</a>
+					
+					
+				</form>
 			</div>
-
-			<div class="formulario">
-				<label for="apellido">Apellido *</label>
-				<input type="text" id="apellido" name="apellido">
-				<br><br>
-			</div>
-
-			<div class="formulario">
-				<label for="edad">Edad *</label>
-				<input type="text" id="edad" name="edad">
-				<br><br>
-			</div>
-
-			<div class="formulario">
-				<label for="contrasena">Contrasena *</label>
-				<input type="password" id="contrasena" name="contrasenaID">
-				<br><br>
-			</div>
-			
-			
-			<p>Al hacer clic en Registrarse, confirmo que he leido y acepto: Declaracion de privacidad de SoloCiencia y terminos condiciones del sitio web de SoloCiencia.</p>
-
-
-			<input type="submit" value="Registrarse" id="submit">
-			
-		</form>
-
-		<a href="login.html">Volver a inicio de sesion</a>
+		</div>
 
 	</section>
 
+	<!-- <br><br>
+
 	<footer>
 		<div>Todos los derechos reservados</div>
-	</footer>
+	</footer> -->
 
 
 </body>
